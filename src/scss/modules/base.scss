@@ -35,3 +35,19 @@ main {
     background: linear-gradient(to right, $primaryColor 0 35%, $secondaryColor 35% 100%);
   }
 }
+
+#contact {
+  @media (min-width: $breakpoint) {
+    width: 35%;
+    color: $secondaryColor;
+    a {
+      color: $secondaryColor;
+    }
+  }
+}
+
+#experience {
+  @media (min-width: $breakpoint) {
+    width: 65%;
+  }
+}
