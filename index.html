@@ -46,7 +46,10 @@
     <header class="profile">
         <h1 class="profile__name">Huh Cat</h1>
         <div class="profile__tagline">Lorem ipsum</div>
-        <img class="profile__image" width="320" height="320" src="/img/profile.jpeg" alt="huh cat meme"/>
+        <picture class="profile__image">
+            <source srcset="/img/profile320.webp, /img/profile640.webp 2x"/>
+            <img width="320" height="320" src="/img/profile.png" alt="huh cat meme"/>
+        </picture>
     </header>
     <section id="contact">
         <header>
