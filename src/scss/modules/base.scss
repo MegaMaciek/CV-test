@@ -51,3 +51,18 @@ main {
     width: 65%;
   }
 }
+
+section:nth-child(odd) {
+  color: $primaryColor;
+  background: $secondaryColor;
+  a{
+    color: $primaryColor;
+  }
+}
+section:nth-child(even) {
+  color: $secondaryColor;
+  background: $primaryColor;
+  a{
+    color: $secondaryColor;
+  }
+}

@@ -1,20 +1,52 @@
 @use 'variables' as *;
 
 .contact{
+  padding: 20px 0 20px 20px;
   &__header{
-    $-text{
+    margin-bottom: 20px;
+    padding: 0 20px 0.5em 0;
+    border-bottom: 1px solid $secondaryColor;
+
+    &-text{
 
     }
   }
 
   &__data {
+    font-style: normal;
+    margin-right: 20px;
+
     &-list{
       &-item{
-        &-label{
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
 
+        &-label{
+          font-weight: bold;
         }
         &-value{
+          display: flex;
+          flex-direction: row;
+          align-items: center;
 
+          &:before {
+            margin-right: 0.5em;
+            content: '';
+            display: block;
+            width: 1em;
+            height: 1em;
+            background: $secondaryColor;
+          }
+          &--email:before{
+            mask-image: url('/img/email.svg');
+          }
+          &--phone:before{
+            mask-image: url('/img/phone.svg');
+          }
+          &--address:before{
+            mask-image: url('/img/map-marker.svg');
+          }
         }
       }
     }
