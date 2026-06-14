@@ -30,3 +30,8 @@ ul {
 img {
   width: 100%;
 }
+main {
+  @media (min-width: $breakpoint) {
+    background: linear-gradient(to right, $primaryColor 0 35%, $secondaryColor 35% 100%);
+  }
+}

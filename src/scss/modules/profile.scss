@@ -6,10 +6,24 @@
   align-items: center;
   padding: 10px;
 
+  @media (min-width: $breakpoint) {
+    align-items: flex-start;
+    padding: 0;
+  }
+
   &__name {
     order:2;
     font-size: 1.5rem;
     letter-spacing: 0.2em;
+
+    @media (min-width: $breakpoint) {
+      margin-left: 35%;
+      height: 180px;
+      display: flex;
+      align-items: flex-end;
+      padding: 0 20px;
+      font-size: 3rem;
+    }
   }
 
   &__tagline {
@@ -17,6 +31,14 @@
     margin-top: 5px;
     letter-spacing: 0.2em;
     font-size: 1rem;
+
+    @media (min-width: $breakpoint) {
+      margin-left: 35%;
+      height: 180px;
+      display: flex;
+      align-items: flex-start;
+      font-size: 2rem;
+    }
   }
 
   &__image {
@@ -24,8 +46,19 @@
     order:1;
     width: 100%;
     max-width: 320px;
+
+    @media (min-width: $breakpoint) {
+      position: absolute;
+      width: 320px;
+      margin: 20px 2.5%;
+    }
+
   }
   img {
     border-radius: 50%;
+    border: 5px solid $primaryColor;
+    @media (min-width: $breakpoint) {
+      border-color: $secondaryColor;
+    }
   }
 }
