@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>01-hello</title>
+    <meta name="description" content="CV of XYZ opis na googla"/>
+
+    <script src="src/js/main.js" defer></script>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="src/scss/main.scss">
+
+</head>
+<body>
+<header>
+    <h1>
+        <a href="/" title="Go to homepage">Circulum Vitae</a></h1>
+    <nav>
+        <button id="abc">Menu</button>
+        <ul id="menu">
+            <li>
+                <a href="/" title="Go to homepage">Home</a>
+            </li>
+            <li>
+                <a href="/#contact">Contact</a>
+            </li>
+            <li>
+                <a href="/#experience">Proffesional expirience</a>
+            </li>
+            <li>
+                <a href="/#education">Education</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <header class="profile">
+        <h1 class="profile__name">Huh Cat</h1>
+        <div class="profile__tagline">Lorem ipsum</div>
+        <img class="profile__image" width="320" height="320" src="/img/profile.jpeg" alt="huh cat meme"/>
+    </header>
+    <section id="contact">
+        <header>
+            <h1>Contact</h1>
+        </header>
+        <address>
+            <ul>
+                <li>
+                    <label for="email">E-mail:</label>
+                    <a href="mailto:maciekkwiatkowskimk@gmail.com" id="email">maciekkwiatkowskimk@gmail.com</a>
+                </li>
+                <li>
+                    <label for="phone">Phone:</label>
+                    <a href="tel:+48500000000" id="phone" title="Make a call">+48 500 000 000</a>
+                </li>
+                <li>
+                    <label for="address">Address</label>
+                    <a href="https://goo.gl/maps/1234567890" id="address" target="_blank" title="Open in Google Maps">
+                        ul. Katowicka 123/456, 00-000 Warszawa
+                    </a>
+                </li>
+            </ul>
+        </address>
+    </section>
+    <section id="experience">
+        <header>
+            <h1>Proffesional expirience</h1>
+        </header>
+        <ul>
+            <li>
+                <header>
+                    <h2>
+                        <strong>Bouncer</strong>
+                        <span>2026-2024</span>
+                        <span>Dirty kittens bar</span>
+                    </h2>
+                </header>
+                <p>lorem ipsum</p>
+            </li>
+            <li>
+                <header>
+                    <h2>
+                        <strong>Bartender</strong>
+                        <span>2024-2020</span>
+                        <span>Milk's cafe</span>
+                    </h2>
+                </header>
+                <p>lorem ipsum</p>
+            </li>
+        </ul>
+    </section>
+
+</main>
+
+<footer>
+    <p>I allow to process my dana for recruitment purpose</p>
+</footer>
+
+</body>
+</html>

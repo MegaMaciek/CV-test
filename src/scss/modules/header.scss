@@ -1,0 +1,95 @@
+@use 'variables' as *;
+
+
+body > header {
+  margin: 10px;
+  background: $primaryColor;
+  color: $secondaryColor;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  a {
+    color: $secondaryColor;
+    text-decoration: none;
+    display: block;
+    transition: all, 0.25s ease-in-out;
+
+    &:hover {
+      @media (min-width: $breakpoint) {
+        text-decoration: underline;
+        translate: 0 0.1em;
+      }
+    }
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  ul {
+    display: none;
+
+    @media (min-width: $breakpoint) {
+      display: flex;
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 1.25rem;
+      height: 48px;
+      color: $primaryColor;
+      padding: 10px 30px 10px 10px;
+      border-bottom: 1px solid $primaryColor;
+
+      &:after {
+        content: '>';
+        @media (min-width: $breakpoint) {
+          display: none;
+        }
+      }
+
+      @media (min-width: $breakpoint) {
+        color: $secondaryColor;
+        padding-right: 10px;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+    }
+
+    &.active {
+      background: $secondaryColor;
+      color: $primaryColor;
+      display: flex;
+      position: absolute;
+      left: 0;
+      flex-direction: column;
+      width: 100%;
+      margin-top: 10px;
+    }
+  }
+
+  button {
+    width: 48px;
+    height: 48px;
+    text-indent: -9999px;
+    border: none;
+    background: url("/img/menu.svg") no-repeat $secondaryColor;
+
+    @media (min-width: $breakpoint) {
+      display: none;
+    }
+
+    &.active {
+      display: block;
+      position: absolute;
+    }
+  }
+}
+

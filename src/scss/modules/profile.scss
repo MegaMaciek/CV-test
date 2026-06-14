@@ -1,0 +1,18 @@
+@use 'variables' as *;
+
+.profile {
+  display: flex;
+  flex-direction: column;
+
+  &__name {
+    order:2;
+  }
+
+  &__tagline {
+    order:3;
+  }
+
+  &__image {
+    order:1;
+  }
+}
