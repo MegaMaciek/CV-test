@@ -1,0 +1,22 @@
+@use 'variables' as *;
+
+.contact{
+  &__header{
+    $-text{
+
+    }
+  }
+
+  &__data {
+    &-list{
+      &-item{
+        &-label{
+
+        }
+        &-value{
+
+        }
+      }
+    }
+  }
+}
