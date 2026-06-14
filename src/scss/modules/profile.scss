@@ -3,16 +3,29 @@
 .profile {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  padding: 10px;
 
   &__name {
     order:2;
+    font-size: 1.5rem;
+    letter-spacing: 0.2em;
   }
 
   &__tagline {
     order:3;
+    margin-top: 5px;
+    letter-spacing: 0.2em;
+    font-size: 1rem;
   }
 
   &__image {
+    margin: 10px 0;
     order:1;
+    width: 100%;
+    max-width: 320px;
+  }
+  img {
+    border-radius: 50%;
   }
 }
